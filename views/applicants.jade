@@ -4,4 +4,8 @@ block content
 	.container
 		h1 Applicants
 		ul#applications.list-unstyled
-			li Applicants should go here.
+			each rec in applicantData
+				li Name: #{rec.name}
+							a(href="/#{rec._id") details
+							
+							
